@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    background: hsla(0, 0%, 100%, 0.75);
+/* font-family: 'Lexend Deca', sans-serif; */
+}
+
+
+#container{
+    width: 100%;
+   height: 95vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; 
+   color: #fff;
+  
+}
+
+
+ .col1{
+    background: var(--bright-orange);
+     width: 250px;
+     height: 400px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     padding-left: 20px;
+     border-bottom-left-radius: 15px;
+     border-top-left-radius: 15px;
+     
+     
+    }
+    .col2{
+        background: var(--dark-cyan);
+        width: 250px;
+        height: 400px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .col3{
+        background: var(--very-dark-cyan);
+        width: 250px;
+        height: 400px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 20px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+
+.btn{
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 10px;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}   
+.btn1{
+    color: var(--bright-orange);
+}
+.btn2{
+    color: var(--dark-cyan);
+}
+.btn3{
+    color: var(--very-dark-cyan);
+}
+h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+p,h1,a{
+    margin: 10px;
+
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+@media only screen and (max-width:600px) {
+    #container{
+        flex-direction:column;
+        height: auto;
+        margin: 20px 0 ;
+        
+        }
+        .col1{
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            
+        }
+        .col3{
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .col1,.col2,.col3{
+            height: 400px !important;
+        }
+        
+    }
+    
+    .attribution {
+         font-size: 12px;
+          text-align: center;
+          padding-bottom: 20px;
+         
+        }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); }
+    
+    
